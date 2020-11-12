@@ -12,6 +12,113 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <h1>THE LIBRARY</h1>
+      <p id="message"></p>
+      <br>
+      <div id="sign-up-id" class="hide">
+        <form id="sign-up-email">
+          <h3>SIGN UP</h3>
+
+          <input placeholder="email" type="email" name="credentials[email]">
+
+          <input placeholder="password" type="password" name="credentials[password]">
+
+          <input placeholder="password confirmation" type="password" name="credentials[password_confirmation]">
+
+          <button id="sign-up-button" type="submit">Sign Up</button>
+        </form>
+      </div>
+
+      <br>
+
+      <div id="sign-in-id">
+        <form id="sign-in-email">
+          <h3>SIGN IN</h3>
+
+            <input placeholder="email" type="email" name="credentials[email]">
+
+            <input placeholder="password" type="password" name="credentials[password]">
+
+            <button type="submit">Sign In</button>
+          </form>
+        </div>
+
+        <br>
+
+        <div id="change-password-id">
+          <form id="change-password-email">
+            <h3>CHANGE PASSWORD</h3>
+
+            <input placeholder="old password" type="password" name="password[old]">
+
+            <input placeholder="new password" type="password" name="password[new]">
+
+            <button type="submit">Change Password</button>
+          </form>
+        </div>
+
+        <br>
+
+        <div>
+          <form id="sign-out-email">
+            <h3>Sign Out</h3>
+
+            <button type="submit">Sign Out</button>
+          </form>
+        </div>
+
+        <br>
+
+        <div>
+          <form id="create-book-form">
+            <h3>CREATE BOOK</h3>
+
+            <input placeholder="book title" type="text" name="book[title]">
+
+            <input placeholder="author" type="text" name="book[author]">
+
+            <button type="submit">Create</button>
+          </form>
+        </div>
+
+        <br>
+
+        <div>
+          <form id="show-books-form">
+            <h3>SHOW BOOKS</h3>
+            <button type="submit">Show</button>
+          </form>
+        </div>
+
+        <br>
+
+        <div id="books-index">
+          <ul id="book-list"></ul>
+
+        </div>
+
+        <div>
+          <form id="update-book-form">
+            <h3>UPDATE BOOK</h3>
+
+            <input placeholder="old book" type="text" name="book[old]">
+
+            <input placeholder="new book" type="text" name="book[new]">
+
+            <button type="submit">Update Book</button>
+          </form>
+        </div>
+
+        <div>
+          <form id="delete-book-form">
+            <h3>DELETE BOOK</h3>
+
+            <input placeholder="book id" type="text" name="ID">
+
+            <button type="submit">Delete Book</button>
+          </form>
+        </div>
+
+
     </body>
 </html>
