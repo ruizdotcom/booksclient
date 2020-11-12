@@ -17,7 +17,4 @@ $(() => {
   $('#update-book-form').on('submit', events.onUpdateBook)
   $('#delete-book-form').on('submit', events.onDeleteBook)
   // hide and show
-  $('#change-password-email').hide()
-  $('#sign-out-email').hide()
-  $('#sign-up-email').hide()
 })
