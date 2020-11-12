@@ -63,7 +63,7 @@ const showBooksData = function (data) {
 
 const updateBookData = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/books',
+    url: config.apiUrl + '/books/' + data.book.id,
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
@@ -74,7 +74,7 @@ const updateBookData = function (data) {
 
 const deleteBookData = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/books',
+    url: config.apiUrl + '/books/' + data.book.id,
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },

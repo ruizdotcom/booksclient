@@ -101,9 +101,11 @@
           <form id="update-book-form">
             <h3>UPDATE BOOK</h3>
 
-            <input placeholder="old book" type="text" name="book[old]">
+            <input placeholder="book id" type="text" name="book[id]">
 
-            <input placeholder="new book" type="text" name="book[new]">
+            <input placeholder="updated book title" type="text" name="book[title]">
+
+            <input placeholder="updated author" type="text" name="book[author]">
 
             <button type="submit">Update Book</button>
           </form>
@@ -113,12 +115,13 @@
           <form id="delete-book-form">
             <h3>DELETE BOOK</h3>
 
-            <input placeholder="book id" type="text" name="ID">
+            <input placeholder="book id" type="text" name="book[id]">
 
             <button type="submit">Delete Book</button>
           </form>
         </div>
 
+        <br>
 
     </body>
 </html>

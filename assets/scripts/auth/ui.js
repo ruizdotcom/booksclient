@@ -51,10 +51,6 @@ const showBooksFailed = function () {
 // UPDATE
 const updateBookSuccessful = function (response) {
   $('#message').text('You have successfully updated a book!')
-  const allBooks = response.books
-  allBooks.forEach(book => {
-    $('#book-list').append(`<li>${book.title}</li>`)
-  })
 }
 const updateBookFailed = function () {
   $('#message').text('Uh oh! It looks like something went wrong, please try again!')
@@ -63,10 +59,6 @@ const updateBookFailed = function () {
 // DELETE
 const deleteBookSuccessful = function (response) {
   $('#message').text('You have successfully deleted a book!')
-  const allBooks = response.books
-  allBooks.forEach(book => {
-    $('#book-list').append(`<li>${book.title}</li>`)
-  })
 }
 const deleteBookFailed = function () {
   $('#message').text('Uh oh! It looks like something went wrong, please try again!')
