@@ -1,6 +1,6 @@
 # Library
 
-This application allows the user to create a book with a title and author as and bring up the list of all their created books, users can also update and delete specific books. The reson I wanted to create this project was to keep track of the books users wanted read.
+This application allows the user to create a book with a title and author as and bring up the list of all their created books, users can also update and delete specific books. The reson I wanted to create this project was to keep track of the books users wanted to read.
 
 ## Important Links
 
