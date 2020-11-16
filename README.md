@@ -37,10 +37,3 @@ During the planning I started by making a wireframe to get the general idea of w
 
 #### Wireframe:
 ![wireframe](https://media.git.generalassemb.ly/user/31159/files/9444cc80-27b6-11eb-9176-f93ddb6adf31)
-
-
----
-
-#### ERD:
-![ERD](https://media.git.generalassemb.ly/user/31159/files/695a7880-27b6-11eb-95a6-a2db21fd7814)
-
