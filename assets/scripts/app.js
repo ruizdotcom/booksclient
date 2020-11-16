@@ -16,5 +16,4 @@ $(() => {
   $('#show-books-form').on('submit', events.onShowBooks)
   $('#update-book-form').on('submit', events.onUpdateBook)
   $('#delete-book-form').on('submit', events.onDeleteBook)
-  // hide and show
 })

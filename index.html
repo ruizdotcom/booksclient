@@ -15,7 +15,7 @@
       <h1>THE LIBRARY</h1>
       <p id="message"></p>
       <br>
-      <div id="sign-up-id" class="hide">
+      <div id="sign-up-id">
         <form id="sign-up-email">
           <h3>SIGN UP</h3>
 
@@ -49,9 +49,9 @@
           <form id="change-password-email">
             <h3>CHANGE PASSWORD</h3>
 
-            <input placeholder="old password" type="password" name="password[old]">
+            <input placeholder="old password" type="password" name="passwords[old]">
 
-            <input placeholder="new password" type="password" name="password[new]">
+            <input placeholder="new password" type="password" name="passwords[new]">
 
             <button type="submit">Change Password</button>
           </form>
@@ -70,7 +70,7 @@
         <br>
 
         <div>
-          <form id="create-book-form">
+          <form id="create-book-form" class='hidden'>
             <h3>CREATE BOOK</h3>
 
             <input placeholder="book title" type="text" name="book[title]">

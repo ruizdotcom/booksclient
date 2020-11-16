@@ -1,13 +1,12 @@
-const getFormFeilds = require('./../../../lib/get-form-fields')
+const getformfields = require('./../../../lib/get-form-fields')
 const ui = require('./ui')
 const api = require('./api')
 
 const onSignUpEmail = event => {
   event.preventDefault()
   const form = event.target
-  console.log('ipo')
 
-  const data = getFormFeilds(form)
+  const data = getformfields(form)
 
   api.signUpData(data)
     .then(ui.signUpSuccessful)
@@ -18,7 +17,7 @@ const onSignInEmail = event => {
   event.preventDefault()
   const form = event.target
 
-  const data = getFormFeilds(form)
+  const data = getformfields(form)
 
   api.signInData(data)
     .then(ui.signInSuccessful)
@@ -29,7 +28,7 @@ const onChangePasswordEmail = event => {
   event.preventDefault()
   const form = event.target
 
-  const data = getFormFeilds(form)
+  const data = getformfields(form)
 
   api.changePasswordData(data)
     .then(ui.changePasswordSuccessful)
@@ -40,7 +39,7 @@ const onSignOutEmail = event => {
   event.preventDefault()
   const form = event.target
 
-  const data = getFormFeilds(form)
+  const data = getformfields(form)
 
   api.signOutData(data)
     .then(ui.signOutSuccessful)
@@ -51,7 +50,7 @@ const onCreateBook = event => {
   event.preventDefault()
   const form = event.target
 
-  const data = getFormFeilds(form)
+  const data = getformfields(form)
 
   api.createBookData(data)
     .then(ui.createBookSuccessful)
@@ -62,7 +61,7 @@ const onShowBooks = event => {
   event.preventDefault()
   const form = event.target
 
-  const data = getFormFeilds(form)
+  const data = getformfields(form)
 
   api.showBooksData(data)
     .then(ui.showBooksSuccessful)
@@ -73,7 +72,7 @@ const onUpdateBook = event => {
   event.preventDefault()
   const form = event.target
 
-  const data = getFormFeilds(form)
+  const data = getformfields(form)
 
   api.updateBookData(data)
     .then(ui.updateBookSuccessful)
@@ -84,7 +83,7 @@ const onDeleteBook = event => {
   event.preventDefault()
   const form = event.target
 
-  const data = getFormFeilds(form)
+  const data = getformfields(form)
 
   api.deleteBookData(data)
     .then(ui.deleteBookSuccessful)
@@ -98,7 +97,6 @@ module.exports = {
   onSignOutEmail,
   onCreateBook,
   onShowBooks,
-  onUpdateBook,
   onUpdateBook,
   onDeleteBook
 }
