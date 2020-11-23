@@ -82,6 +82,50 @@ const deleteBookData = function (data) {
   })
 }
 
+// MOVIE
+const createMovieData = function (data) {
+  return $.ajax({
+    url: config.apiUrl + '/movies',
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
+    },
+    method: 'POST',
+    data: data
+  })
+}
+
+const showMoviesData = function (data) {
+  return $.ajax({
+    url: config.apiUrl + '/movies',
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
+    },
+    method: 'GET',
+    data: data
+  })
+}
+
+const updateMovieData = function (data) {
+  return $.ajax({
+    url: config.apiUrl + '/movies/' + data.movie.id,
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
+    },
+    method: 'PATCH',
+    data: data
+  })
+}
+
+const deleteMovieData = function (data) {
+  return $.ajax({
+    url: config.apiUrl + '/movies/' + data.movie.id,
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
+    },
+    method: 'DELETE'
+  })
+}
+
 module.exports = {
   signUpData,
   signInData,
@@ -90,5 +134,9 @@ module.exports = {
   createBookData,
   showBooksData,
   updateBookData,
-  deleteBookData
+  deleteBookData,
+  createMovieData,
+  showMoviesData,
+  updateMovieData,
+  deleteMovieData
 }

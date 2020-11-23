@@ -90,6 +90,51 @@ const onDeleteBook = event => {
     .catch(ui.deleteBookFailed)
 }
 
+// Movies forms VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+const onCreateMovie = event => {
+  event.preventDefault()
+  const form = event.target
+
+  const data = getformfields(form)
+
+  api.createMovieData(data)
+    .then(ui.createMovieSuccessful)
+    .catch(ui.createMovieSuccessful)
+}
+
+const onShowMovies = event => {
+  event.preventDefault()
+  const form = event.target
+
+  const data = getformfields(form)
+
+  api.showMoviesData(data)
+    .then(ui.showMoviesSuccessful)
+    .catch(ui.ShowMoviesFailed)
+}
+
+const onUpdateMovie = event => {
+  event.preventDefault()
+  const form = event.target
+
+  const data = getformfields(form)
+
+  api.updateMovieData(data)
+    .then(ui.updateMovieSuccessful)
+    .catch(ui.updateMovieFailed)
+}
+
+const onDeleteMovie = event => {
+  event.preventDefault()
+  const form = event.target
+
+  const data = getformfields(form)
+
+  api.deleteMovieData(data)
+    .then(ui.deleteMovieSuccessful)
+    .catch(ui.deleteMovieFailed)
+}
+
 module.exports = {
   onSignUpEmail,
   onSignInEmail,
@@ -98,5 +143,9 @@ module.exports = {
   onCreateBook,
   onShowBooks,
   onUpdateBook,
-  onDeleteBook
+  onDeleteBook,
+  onCreateMovie,
+  onShowMovies,
+  onUpdateMovie,
+  onDeleteMovie
 }

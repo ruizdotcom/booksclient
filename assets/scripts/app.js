@@ -12,8 +12,14 @@ $(() => {
   $('#sign-in-email').on('submit', events.onSignInEmail)
   $('#change-password-email').on('submit', events.onChangePasswordEmail)
   $('#sign-out-email').on('submit', events.onSignOutEmail)
+
   $('#create-book-form').on('submit', events.onCreateBook)
   $('#show-books-form').on('submit', events.onShowBooks)
   $('#update-book-form').on('submit', events.onUpdateBook)
   $('#delete-book-form').on('submit', events.onDeleteBook)
+
+  $('#create-movie-form').on('submit', events.onCreateMovie)
+  $('#show-movies-form').on('submit', events.onShowMovies)
+  $('#update-movie-form').on('submit', events.onUpdateMovie)
+  $('#delete-movie-form').on('submit', events.onDeleteMovie)
 })
