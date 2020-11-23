@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Example</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <h1>THE LIBRARY</h1>
+      <p id="message"></p>
+      <br>
+      <div id="sign-up-id">
+        <form id="sign-up-email">
+          <h3>SIGN UP</h3>
+
+          <input placeholder="email" type="email" name="credentials[email]">
+
+          <input placeholder="password" type="password" name="credentials[password]">
+
+          <input placeholder="password confirmation" type="password" name="credentials[password_confirmation]">
+
+          <button id="sign-up-button" type="submit">Sign Up</button>
+        </form>
+      </div>
+
+      <br>
+
+      <div id="sign-in-id">
+        <form id="sign-in-email">
+          <h3>SIGN IN</h3>
+
+            <input placeholder="email" type="email" name="credentials[email]">
+
+            <input placeholder="password" type="password" name="credentials[password]">
+
+            <button type="submit">Sign In</button>
+          </form>
+        </div>
+
+        <br>
+
+        <div id="change-password-id">
+          <form id="change-password-email">
+            <h3>CHANGE PASSWORD</h3>
+
+            <input placeholder="old password" type="password" name="passwords[old]">
+
+            <input placeholder="new password" type="password" name="passwords[new]">
+
+            <button type="submit">Change Password</button>
+          </form>
+        </div>
+
+        <br>
+
+        <div>
+          <form id="sign-out-email">
+            <h3>Sign Out</h3>
+
+            <button type="submit">Sign Out</button>
+          </form>
+        </div>
+
+        <br>
+
+        <div>
+          <form id="create-book-form" class='hidden'>
+            <h3>CREATE BOOK</h3>
+
+            <input placeholder="book title" type="text" name="book[title]">
+
+            <input placeholder="author" type="text" name="book[author]">
+
+            <button type="submit">Create</button>
+          </form>
+        </div>
+
+        <br>
+
+        <div>
+          <form id="show-books-form">
+            <h3>SHOW BOOKS</h3>
+            <button type="submit" id="show-button">Show</button>
+          </form>
+        </div>
+
+        <br>
+
+        <div id="books-index">
+          <ul id="book-list"></ul>
+
+        </div>
+
+        <div>
+          <form id="update-book-form">
+            <h3>UPDATE BOOK</h3>
+
+            <input placeholder="book id" type="text" name="book[id]">
+
+            <input placeholder="updated book title" type="text" name="book[title]">
+
+            <input placeholder="updated author" type="text" name="book[author]">
+
+            <button type="submit">Update Book</button>
+          </form>
+        </div>
+
+        <br>
+
+        <div>
+          <form id="delete-book-form">
+            <h3>DELETE BOOK</h3>
+
+            <input placeholder="book id" type="text" name="book[id]">
+
+            <button type="submit">Delete Book</button>
+          </form>
+        </div>
+
+        <div>
+          <form id="create-movie-form">
+            <h3>CREATE MOVIE</h3>
+            <input placeholder="movie title" type="text" name="movie[title]">
+            <input placeholder="director" type="text" name="movie[director]">
+            <button type="submit">Create</button>
+          </form>
+        </div>
+
+        <br>
+
+        <div>
+          <form id="show-movies-form">
+            <h3>SHOW MOVIES</h3>
+            <button type="submit">Show</button>
+          </form>
+        </div>
+
+        <div id="movies-index">
+          <ul id="movie-list"></ul>
+
+        </div>
+
+        <br>
+
+        <div>
+          <form id="update-movie-form">
+            <h3>UPDATE MOVIE</h3>
+
+            <input placeholder="movie id" type="text" name="movie[id]">
+
+            <input placeholder="updated movie title" type="text" name="movie[title]">
+
+            <input placeholder="updated movie director" type="text" name="movie[director]">
+
+            <button type="submit">Update Movie</button>
+          </form>
+        </div>
+
+        <br>
+
+        <div>
+          <form id="delete-movie-form">
+            <h3>DELETE MOVIE</h3>
+
+            <input placeholder="movie id" type="text" name="movie[id]">
+
+            <button type="submit">Delete Movie</button>
+          </form>
+        </div>
+
+        <footer id="footer">
+        </footer>
+
+    </body>
+</html>
