@@ -100,7 +100,6 @@ const createBookFailed = function () {
 // SHOW
 const showBooksSuccessful = function (response) {
   $('#book-list').html(' ')
-  console.log(response)
   $('#message').text('You have successfully showed a book!')
   const allBooks = response.books
   allBooks.forEach(book => {
@@ -147,7 +146,6 @@ const createMovieFailed = function () {
 // SHOW
 const showMoviesSuccessful = function (response) {
   $('#movie-list').html(' ')
-  console.log(response)
   $('#message').text('You have successfully showed a movie!')
   const allMovies = response.movies
   allMovies.forEach(movie => {
