@@ -2,7 +2,7 @@
 
 let apiUrl
 const apiUrls = {
-  production: 'https://salty-ridge-00839.herokuapp.com',
+  production: 'https://bookapi.onrender.com',
   development: 'http://localhost:4741'
 }
 
