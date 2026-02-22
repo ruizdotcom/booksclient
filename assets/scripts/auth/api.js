@@ -1,6 +1,6 @@
-const config = require('./../config')
+/*const config = require('./../config')
 const store = require('../store')
-
+*/
 const signUpData = function (data) {
   return $.ajax({
     url: config.apiUrl + '/sign-up',

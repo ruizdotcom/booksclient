@@ -1,4 +1,11 @@
-'use strict'
+
+
+window.config = {
+  apiUrl: 'https://YOUR-BACKEND.onrender.com'
+}
+
+
+/*'use strict'
 
 let apiUrl
 const apiUrls = {
@@ -15,3 +22,4 @@ if (window.location.hostname === 'localhost') {
 module.exports = {
   apiUrl
 }
+*/

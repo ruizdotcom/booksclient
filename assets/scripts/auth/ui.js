@@ -1,4 +1,4 @@
-const store = require('./../store')
+//const store = require('./../store')
 
 // INITIAL_LOAD
 $(document).ready(function () {
