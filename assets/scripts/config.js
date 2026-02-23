@@ -1,7 +1,7 @@
 
 
 window.config = {
-  apiUrl: 'https://bookapi.onrender.com'
+  apiUrl: 'bookapi-isy2.onrender.com'
 }
 
 
