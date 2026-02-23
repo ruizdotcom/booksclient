@@ -179,7 +179,7 @@ const deleteMovieFailed = function () {
 }
 
 // module.exports =
-window.authApi = {
+window.authUi = {
   // initialLoad,
   signUpSuccessful,
   signUpFailed,

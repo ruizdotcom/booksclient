@@ -6,7 +6,7 @@ const onSignUpEmail = event => {
   event.preventDefault()
   const form = event.target
 
-  const data = getformfields(form)
+  const data = getFormFields(form)
 
   authApi.signUpData(data)
     .then(authUi.signUpSuccessful)
@@ -17,7 +17,7 @@ const onSignInEmail = event => {
   event.preventDefault()
   const form = event.target
 
-  const data = getformfields(form)
+  const data = getFormFields(form)
 
   authApi.signInData(data)
     .then(authUi.signInSuccessful)
@@ -28,7 +28,7 @@ const onChangePasswordEmail = event => {
   event.preventDefault()
   const form = event.target
 
-  const data = getformfields(form)
+  const data = getFormFields(form)
 
   authApi.changePasswordData(data)
     .then(authUi.changePasswordSuccessful)
@@ -39,7 +39,7 @@ const onSignOutEmail = event => {
   event.preventDefault()
   const form = event.target
 
-  const data = getformfields(form)
+  const data = getFormFields(form)
 
   authApi.signOutData(data)
     .then(authUi.signOutSuccessful)
@@ -50,7 +50,7 @@ const onCreateBook = event => {
   event.preventDefault()
   const form = event.target
 
-  const data = getformfields(form)
+  const data = getFormFields(form)
 
   authApi.createBookData(data)
     .then(authUi.createBookSuccessful)
@@ -61,7 +61,7 @@ const onShowBooks = event => {
   event.preventDefault()
   const form = event.target
 
-  const data = getformfields(form)
+  const data = getFormFields(form)
 
   authApi.showBooksData(data)
     .then(authUi.showBooksSuccessful)
@@ -72,7 +72,7 @@ const onUpdateBook = event => {
   event.preventDefault()
   const form = event.target
 
-  const data = getformfields(form)
+  const data = getFormFields(form)
 
   authApi.updateBookData(data)
     .then(authUi.updateBookSuccessful)
@@ -83,7 +83,7 @@ const onDeleteBook = event => {
   event.preventDefault()
   const form = event.target
 
-  const data = getformfields(form)
+  const data = getFormFields(form)
 
   authApi.deleteBookData(data)
     .then(authUi.deleteBookSuccessful)
@@ -95,7 +95,7 @@ const onCreateMovie = event => {
   event.preventDefault()
   const form = event.target
 
-  const data = getformfields(form)
+  const data = getFormFields(form)
 
   authApi.createMovieData(data)
     .then(authUi.createMovieSuccessful)
@@ -106,7 +106,7 @@ const onShowMovies = event => {
   event.preventDefault()
   const form = event.target
 
-  const data = getformfields(form)
+  const data = getFormFields(form)
 
   authApi.showMoviesData(data)
     .then(authUi.showMoviesSuccessful)
@@ -117,7 +117,7 @@ const onUpdateMovie = event => {
   event.preventDefault()
   const form = event.target
 
-  const data = getformfields(form)
+  const data = getFormFields(form)
 
   authApi.updateMovieData(data)
     .then(authUi.updateMovieSuccessful)
@@ -128,7 +128,7 @@ const onDeleteMovie = event => {
   event.preventDefault()
   const form = event.target
 
-  const data = getformfields(form)
+  const data = getFormFields(form)
 
   authApi.deleteMovieData(data)
     .then(authUi.deleteMovieSuccessful)
