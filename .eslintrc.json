@@ -9,3 +9,18 @@
     "no-var": "error"
   }
 }
+
+{
+  "env": {
+    "browser": true,
+    "jquery": true
+  },
+  "globals": {
+    "authEvents": "readonly",
+    "authApi": "readonly",
+    "authUi": "readonly",
+    "config": "readonly",
+    "store": "readonly",
+    "getformfields": "readonly"
+  }
+}

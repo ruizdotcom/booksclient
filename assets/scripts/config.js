@@ -5,7 +5,7 @@ window.config = {
 }
 
 
-/*'use strict'
+/* 'use strict'
 
 let apiUrl
 const apiUrls = {

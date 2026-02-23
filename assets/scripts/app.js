@@ -7,7 +7,7 @@
 // require('./example')
 // const events = require('./auth/events.js')
 
-//authEvents.addHandlers()
+// authEvents.addHandlers()
 
 $(() => {
   // your JS code goes here
