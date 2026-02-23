@@ -178,7 +178,8 @@ const deleteMovieFailed = function () {
   $('#message').text('Uh oh! It looks like something went wrong, please try again!')
 }
 
-module.exports = {
+// module.exports =
+window.authApi = {
   // initialLoad,
   signUpSuccessful,
   signUpFailed,

@@ -126,7 +126,8 @@ const deleteMovieData = function (data) {
   })
 }
 
-module.exports = {
+// module.exports = 
+window.authApi = {
   signUpData,
   signInData,
   changePasswordData,

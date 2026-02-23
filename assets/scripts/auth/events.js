@@ -135,7 +135,8 @@ const onDeleteMovie = event => {
     .catch(ui.deleteMovieFailed)
 }
 
-module.exports = {
+// module.exports = 
+window.authApi = {
   onSignUpEmail,
   onSignInEmail,
   onChangePasswordEmail,
