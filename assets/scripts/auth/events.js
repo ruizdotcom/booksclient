@@ -8,9 +8,9 @@ const onSignUpEmail = event => {
 
   const data = getformfields(form)
 
-  api.signUpData(data)
-    .then(ui.signUpSuccessful)
-    .catch(ui.signUpFailed)
+  authApi.signUpData(data)
+    .then(authUi.signUpSuccessful)
+    .catch(authUi.signUpFailed)
 }
 
 const onSignInEmail = event => {
@@ -19,9 +19,9 @@ const onSignInEmail = event => {
 
   const data = getformfields(form)
 
-  api.signInData(data)
-    .then(ui.signInSuccessful)
-    .catch(ui.signInFailed)
+  authApi.signInData(data)
+    .then(authUi.signInSuccessful)
+    .catch(authUi.signInFailed)
 }
 
 const onChangePasswordEmail = event => {
@@ -30,9 +30,9 @@ const onChangePasswordEmail = event => {
 
   const data = getformfields(form)
 
-  api.changePasswordData(data)
-    .then(ui.changePasswordSuccessful)
-    .catch(ui.changePasswordFailed)
+  authApi.changePasswordData(data)
+    .then(authUi.changePasswordSuccessful)
+    .catch(authUi.changePasswordFailed)
 }
 
 const onSignOutEmail = event => {
@@ -41,9 +41,9 @@ const onSignOutEmail = event => {
 
   const data = getformfields(form)
 
-  api.signOutData(data)
-    .then(ui.signOutSuccessful)
-    .catch(ui.signOutFailed)
+  authApi.signOutData(data)
+    .then(authUi.signOutSuccessful)
+    .catch(authUi.signOutFailed)
 }
 
 const onCreateBook = event => {
@@ -52,9 +52,9 @@ const onCreateBook = event => {
 
   const data = getformfields(form)
 
-  api.createBookData(data)
-    .then(ui.createBookSuccessful)
-    .catch(ui.createBookFailed)
+  authApi.createBookData(data)
+    .then(authUi.createBookSuccessful)
+    .catch(authUi.createBookFailed)
 }
 
 const onShowBooks = event => {
@@ -63,9 +63,9 @@ const onShowBooks = event => {
 
   const data = getformfields(form)
 
-  api.showBooksData(data)
-    .then(ui.showBooksSuccessful)
-    .catch(ui.showBooksFailed)
+  authApi.showBooksData(data)
+    .then(authUi.showBooksSuccessful)
+    .catch(authUi.showBooksFailed)
 }
 
 const onUpdateBook = event => {
@@ -74,9 +74,9 @@ const onUpdateBook = event => {
 
   const data = getformfields(form)
 
-  api.updateBookData(data)
-    .then(ui.updateBookSuccessful)
-    .catch(ui.updateBookFailed)
+  authApi.updateBookData(data)
+    .then(authUi.updateBookSuccessful)
+    .catch(authUi.updateBookFailed)
 }
 
 const onDeleteBook = event => {
@@ -85,9 +85,9 @@ const onDeleteBook = event => {
 
   const data = getformfields(form)
 
-  api.deleteBookData(data)
-    .then(ui.deleteBookSuccessful)
-    .catch(ui.deleteBookFailed)
+  authApi.deleteBookData(data)
+    .then(authUi.deleteBookSuccessful)
+    .catch(authUi.deleteBookFailed)
 }
 
 // Movies forms VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
@@ -97,9 +97,9 @@ const onCreateMovie = event => {
 
   const data = getformfields(form)
 
-  api.createMovieData(data)
-    .then(ui.createMovieSuccessful)
-    .catch(ui.createMovieSuccessful)
+  authApi.createMovieData(data)
+    .then(authUi.createMovieSuccessful)
+    .catch(authUi.createMovieSuccessful)
 }
 
 const onShowMovies = event => {
@@ -108,9 +108,9 @@ const onShowMovies = event => {
 
   const data = getformfields(form)
 
-  api.showMoviesData(data)
-    .then(ui.showMoviesSuccessful)
-    .catch(ui.ShowMoviesFailed)
+  authApi.showMoviesData(data)
+    .then(authUi.showMoviesSuccessful)
+    .catch(authUi.ShowMoviesFailed)
 }
 
 const onUpdateMovie = event => {
@@ -119,9 +119,9 @@ const onUpdateMovie = event => {
 
   const data = getformfields(form)
 
-  api.updateMovieData(data)
-    .then(ui.updateMovieSuccessful)
-    .catch(ui.updateMovieFailed)
+  authApi.updateMovieData(data)
+    .then(authUi.updateMovieSuccessful)
+    .catch(authUi.updateMovieFailed)
 }
 
 const onDeleteMovie = event => {
@@ -130,13 +130,13 @@ const onDeleteMovie = event => {
 
   const data = getformfields(form)
 
-  api.deleteMovieData(data)
-    .then(ui.deleteMovieSuccessful)
-    .catch(ui.deleteMovieFailed)
+  authApi.deleteMovieData(data)
+    .then(authUi.deleteMovieSuccessful)
+    .catch(authUi.deleteMovieFailed)
 }
 
 // module.exports = 
-window.authApi = {
+window.authEvents = {
   onSignUpEmail,
   onSignInEmail,
   onChangePasswordEmail,
