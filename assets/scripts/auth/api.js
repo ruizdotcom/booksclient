@@ -3,7 +3,7 @@ const store = require('../store')
 */
 const signUpData = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/sign-up',
+    url: window.config.apiUrl + '/sign-up',
     method: 'POST',
     data: data
   })
@@ -11,7 +11,7 @@ const signUpData = function (data) {
 
 const signInData = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/sign-in',
+    url: window.config.apiUrl + '/sign-in',
     method: 'POST',
     data: data
   })
@@ -19,9 +19,9 @@ const signInData = function (data) {
 
 const changePasswordData = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/change-password',
+    url: window.config.apiUrl + '/change-password',
     headers: {
-      Authorization: 'Bearer ' + store.user.token
+      Authorization: 'Bearer ' + window.store.user.token
     },
     method: 'PATCH',
     data: data
@@ -30,9 +30,9 @@ const changePasswordData = function (data) {
 
 const signOutData = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/sign-out',
+    url: window.config.apiUrl + '/sign-out',
     headers: {
-      Authorization: 'Bearer ' + store.user.token
+      Authorization: 'Bearer ' + window.store.user.token
     },
     method: 'DELETE',
     data: data
@@ -41,9 +41,9 @@ const signOutData = function (data) {
 
 const createBookData = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/books',
+    url: window.config.apiUrl + '/books',
     headers: {
-      Authorization: 'Bearer ' + store.user.token
+      Authorization: 'Bearer ' + window.store.user.token
     },
     method: 'POST',
     data: data
@@ -52,9 +52,9 @@ const createBookData = function (data) {
 
 const showBooksData = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/books',
+    url: window.config.apiUrl + '/books',
     headers: {
-      Authorization: 'Bearer ' + store.user.token
+      Authorization: 'Bearer ' + window.store.user.token
     },
     method: 'GET',
     data: data
@@ -63,9 +63,9 @@ const showBooksData = function (data) {
 
 const updateBookData = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/books/' + data.book.id,
+    url: window.config.apiUrl + '/books/' + data.book.id,
     headers: {
-      Authorization: 'Bearer ' + store.user.token
+      Authorization: 'Bearer ' + window.store.user.token
     },
     method: 'PATCH',
     data: data
@@ -74,9 +74,9 @@ const updateBookData = function (data) {
 
 const deleteBookData = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/books/' + data.book.id,
+    url: window.config.apiUrl + '/books/' + data.book.id,
     headers: {
-      Authorization: 'Bearer ' + store.user.token
+      Authorization: 'Bearer ' + window.store.user.token
     },
     method: 'DELETE'
   })
@@ -85,9 +85,9 @@ const deleteBookData = function (data) {
 // MOVIE
 const createMovieData = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/movies',
+    url: window.config.apiUrl + '/movies',
     headers: {
-      Authorization: 'Bearer ' + store.user.token
+      Authorization: 'Bearer ' + window.store.user.token
     },
     method: 'POST',
     data: data
@@ -96,9 +96,9 @@ const createMovieData = function (data) {
 
 const showMoviesData = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/movies',
+    url: window.config.apiUrl + '/movies',
     headers: {
-      Authorization: 'Bearer ' + store.user.token
+      Authorization: 'Bearer ' + window.store.user.token
     },
     method: 'GET',
     data: data
@@ -107,9 +107,9 @@ const showMoviesData = function (data) {
 
 const updateMovieData = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/movies/' + data.movie.id,
+    url: window.config.apiUrl + '/movies/' + data.movie.id,
     headers: {
-      Authorization: 'Bearer ' + store.user.token
+      Authorization: 'Bearer ' + window.store.user.token
     },
     method: 'PATCH',
     data: data
@@ -118,9 +118,9 @@ const updateMovieData = function (data) {
 
 const deleteMovieData = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/movies/' + data.movie.id,
+    url: window.config.apiUrl + '/movies/' + data.movie.id,
     headers: {
-      Authorization: 'Bearer ' + store.user.token
+      Authorization: 'Bearer ' + window.store.user.token
     },
     method: 'DELETE'
   })
